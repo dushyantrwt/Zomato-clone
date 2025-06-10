@@ -1,4 +1,4 @@
-/* SIGNUP POPUP STYLES */
+/* LOGIN POPUP STYLES (reuse signup styles) */
 .popup {
   display: none;
   position: fixed;
@@ -7,11 +7,11 @@
   background: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .popup-content {
-  background: #fff;
+  background: white;
   padding: 30px;
   border-radius: 10px;
   width: 90%;
@@ -19,11 +19,6 @@
   position: relative;
   animation: fadeIn 0.3s ease;
   text-align: center;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 .close-btn {
@@ -35,36 +30,27 @@
   color: #e23744;
 }
 
-.popup-content input,
-.popup-content label,
-.popup-content button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-}
-
 .red-btn {
-  background: #e23744;
+  background-color: #e23744;
   color: white;
   padding: 10px;
   border: none;
+  width: 100%;
   border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 .red-btn:hover {
-  background: #c81e2f;
+  background-color: #c81e2f;
 }
 
-.or {
-  margin: 15px 0;
-  font-weight: bold;
+.login-footer-text {
+  margin-top: 20px;
+  font-size: 0.9em;
 }
 
-.login-link {
-  margin-top: 10px;
-}
-.login-link a {
+.login-footer-text a {
   color: #e23744;
   text-decoration: underline;
 }
